@@ -1,0 +1,41 @@
+@media screen and (max-width: 768px) {
+  .wrapper {
+    display: block;
+    width: 100%;
+  }
+  .aside {
+    max-width: 100%;
+  }
+  .aside_title {
+    padding: 50px;
+  }
+  .menu {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .wrapper {
+    display: block;
+    width: 100%;
+  }
+  .aside {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+  }
+  .aside_title {
+    padding: 0;
+  }
+  .menu {
+    margin: 0;
+  }
+  .menu_list {
+    flex-direction: row;
+  }
+  .social_icons {
+    flex-direction: column;
+    padding: 0;
+  }
+}
