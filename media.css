@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .wrapper {
     display: block;
     width: 100%;
@@ -8,7 +8,6 @@
     width: 100%;
     flex-direction: row;
     align-items: center;
-    gap: 60px;
   }
   .aside {
     width: 100%;
@@ -16,48 +15,80 @@
     position: fixed;
   }
   .aside_title {
-    padding: 30px;
-  }
-
-  .menu_list {
-    flex-direction: row;
-  }
-  .social_icons {
-    padding: 0 30px 0 0;
-    margin-top: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 30px;
   }
 
   .header_title {
     margin: 234px auto 35px;
   }
+
+  .menu_burger {
+    display: flex;
+    margin-right: 30px;
+    cursor: pointer;
+  }
+  .menu_burger.active::before {
+    transform: rotate(45deg);
+    top: 11px;
+  }
+  .menu_burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 11px;
+  }
+  .menu_burger.active span {
+    transform: scale(0);
+  }
+
+  .menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2d3e4f;
+    padding: 77px 30px;
+    overflow: auto;
+  }
+  .menu.active {
+    top: 0;
+  }
+  .social_icons {
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+    top: -100%;
+    gap: 30px;
+  }
+  .social_icons.active {
+    top: 92%;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .social_icons.active {
+    top: 92%;
+  }
 }
 
 @media screen and (max-width: 640px) {
-  .aside {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
-    align-items: center;
-  }
-  .aside_title {
-    padding: 0;
-  }
-  .menu {
-    margin: 0;
-  }
-  .menu_list {
-    flex-direction: row;
-  }
-  .social_icons {
-    flex-direction: column;
-    padding: 0;
-  }
-
   .news_items {
     flex-direction: column;
-    padding-right: 20px;
+    gap: 15px;
   }
   .news_items img {
     align-self: center;
+  }
+  .menu_burger {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 767px) {
+  .news_items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
   }
 }

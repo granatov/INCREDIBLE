@@ -23,8 +23,11 @@ a {
 
 .wrapper {
   display: flex;
-
 }
 .right_side {
   width: 100%;
-  }
+}
+
+body.active {
+  overflow: hidden;
+}
