@@ -20,10 +20,6 @@
     padding-left: 30px;
   }
 
-  .header_title {
-    margin: 234px auto 35px;
-  }
-
   .menu_burger {
     display: flex;
     margin-right: 30px;
@@ -66,12 +62,6 @@
   }
 }
 
-@media screen and (orientation: landscape) {
-  .social_icons.active {
-    top: 92%;
-  }
-}
-
 @media screen and (max-width: 640px) {
   .news_items {
     flex-direction: column;
@@ -90,5 +80,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
+  }
+}
+@media screen and (orientation: landscape) and (max-width: 915px) {
+  .social_icons.active {
+    top: 92%;
+  }
+  .aside_title {
+    margin-top: 16px;
   }
 }
