@@ -1,10 +1,16 @@
 .aside {
   background: #2d3e4f;
-  width: 100%;
-  min-width: 329px;
+  width: 23%;
+  min-width: 320px;
   display: flex;
   flex-direction: column;
   max-width: 785px;
+  align-items: center;
+}
+.aside_top {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
 }
 .aside_title {
   text-align: center;
@@ -28,12 +34,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* max-width: 1111px; */
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 .header_title {
-  padding: 205px 345px 0 345px;
+  margin: 305px auto 35px;
+  max-width: 621px;
   font-size: 50px;
   line-height: 44px;
   text-align: center;
@@ -44,7 +51,7 @@
 }
 .buttons {
   margin: 0 auto;
-  margin-bottom: 325px;
+
 }
 
 .header_button {

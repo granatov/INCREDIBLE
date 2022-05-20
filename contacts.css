@@ -1,6 +1,6 @@
 .contacts {
   background: #fafafa;
-  padding: 0 264px;
+  padding: 0 20px;
 }
 
 .contacts_title {
@@ -54,7 +54,6 @@
   margin-bottom: 17px;
   font-family: "Oswald";
   font-size: 16px;
-
 }
 
 .inputs_button {
@@ -73,6 +72,6 @@
 
 .cop {
   background-color: #fff;
-  padding: 23px 440px 28px 440px;
+  padding: 23px;
   text-align: center;
 }

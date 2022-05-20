@@ -21,11 +21,12 @@
 
 .news_items {
   display: flex;
-  padding: 0 86px;
+
   align-items: center;
-  gap: 21px;
+
 }
 .news_item {
+  margin-left: 21px;
   display: flex;
   flex-direction: column;
   align-items: baseline;
@@ -49,8 +50,8 @@
 .red_line {
   background: #cf404d;
   display: flex;
-  justify-content: space-between;
-  padding: 44px 91px;
+  justify-content: space-around;
+  padding: 44px 0px;
   margin-bottom: 57px;
 }
 .red_line_text {
